@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>JUKEY BOO</title>
+      <link rel="stylesheet" type="text/css" href="jukebox.css">
+   </head>
+   <body>
+      <div id="wrapper">
+         <div id ="song_display">
+            <div id="artist_display">
+               <img id="a1" src="images/jf-letur_lefr.png" class="song_image">
+               <figcaption>John Frusciante - In My Light</figcaption>
+               <img id="a2" src="images/jf-to_clara.png" class="song_image">
+               <figcaption>John Frusciante - My Smile is a Rifle</figcaption>
+               <img id="a3" src="images/jf-the_empyrean.png" class="song_image">
+               <figcaption>John Frusciante - Unreachable</figcaption>
+               <img id="a4" src="images/jf-enclosure.png" class="song_image">
+               <figcaption>John Frusciante - Fanfare</figcaption>
+            </div>
+            <div id="artist_display">
+               <img id="b1" src="images/wa-alapalooza.png" class="song_image">
+               <figcaption>Weird Al Yankovic - Jurassic Park</figcaption>
+               <img id="b2" src="images/wa-alpocalypse.png" class="song_image">
+               <figcaption>Weird Al Yankovic - Craigslist</figcaption>
+               <img id="b3" src="images/wa-greatest_hits.png" class="song_image">
+               <figcaption>Weird Al Yankovic - You Don't Love Me Anymore</figcaption>
+               <img id="b4" src="images/wa-whatever.png" class="song_image">
+               <figcaption>Weird Al Yankovic - Whatever You Like</figcaption>
+            </div>
+            <div id="midconsole">
+               <div id="controller">
+                  <audio controls id="player">
+       <!--               audio source should be an id
+                     the id should be accessed through a click -->
+                     <source src="" type="audio/mpeg">
+                     Your browser does not support the audio element.
+                  </audio>
+               </div>
+               <div id="buttons">
+                  <img src="buttons.png">
+               </div>
+            </div>
+            <div id="artist_display">
+               <img id="c1" src="images/dp-human_after_all.png" class="song_image" data-name="In My Light">
+               <figcaption>Daft Punk - Make Love</figcaption>
+               <img id="c2" src="images/dp-alive.png" class="song_image">
+               <figcaption>Daft Punk - Robot Rock/Oh Yeah</figcaption>
+               <img id="c3" src="images/dp-discovery.png" class="song_image">
+               <figcaption>Daft Punk - Something About Us</figcaption>
+               <img id="c4" src="images/dp-ram.png" class="song_image">
+               <figcaption>Daft Punk - Instant Crush</figcaption>
+            </div>
+            <div id="artist_display">
+               <img id="d1" src="images/db-blackstar.png" class="song_image">
+               <figcaption>David Bowie - Blackstar</figcaption>
+               <img id="d2" src="images/db-hunky_dory.png" class="song_image">
+               <figcaption>David Bowie - Changes</figcaption>
+               <img id="d3" src="images/db-best_of_bowie.png" class="song_image">
+               <figcaption>David Bowie - Ashes to Ashes</figcaption>
+               <img id="d4" src="images/db-best_of_bowie.png" class="song_image">
+               <figcaption>David Bowie - Under Pressure</figcaption>
+            </div>
+         </div>
+      </div>
+      <!-- JavaScript and JQuery links -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="jukebox.js"></script>
+   </body>
+</html>
