@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>JUKEY BOO</title>
+      <link rel="stylesheet" type="text/css" href="experiment_jukebox.css">
+      <link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <div id="wrapper">
+         <div id ="song_display">
+            <div id="column">
+               <div id="artist_display">
+                  <img id="a1" src="images/jf-letur_lefr.png" class="song_image">
+                  <figcaption>John Frusciante - In My Light</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="a2" src="images/jf-to_clara.png" class="song_image">
+                  <figcaption>John Frusciante - My Smile is a Rifle</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="a3" src="images/jf-the_empyrean.png" class="song_image">
+                  <figcaption>John Frusciante - Unreachable</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="a4" src="images/jf-enclosure.png" class="song_image">
+                  <figcaption>John Frusciante - Fanfare</figcaption>
+               </div>
+            </div>
+            <div id="column">
+               <div id="artist_display">
+                  <img id="b1" src="images/wa-alapalooza.png" class="song_image">
+                  <figcaption>Weird Al Yankovic - Jurassic Park</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="b2" src="images/wa-alpocalypse.png" class="song_image">
+                  <figcaption>Weird Al Yankovic - Craigslist</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="b3" src="images/wa-greatest_hits.png" class="song_image">
+                  <figcaption>Weird Al Yankovic - You Don't Love Me Anymore</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="b4" src="images/wa-whatever.png" class="song_image">
+                  <figcaption>Weird Al Yankovic - Whatever You Like</figcaption>
+               </div>
+            </div>
+            <div id="column">
+               <div id="midconsole">
+                  <div id="codedisplay">
+
+                  </div>
+                  <audio id="player">
+                     <source src="" type="audio/mpeg">
+                     Your browser does not support the audio element.
+                  </audio>
+                  <div id="buttons">
+                     <div id="selectbutton">
+                        <img src="selectbutton.jpg" class="playbutton">
+                     </div>
+                     <div id="buttonpresser">
+                        <audio id="sound1" src="button_push.mp3"></audio>
+                        <div id="firstrow">
+                           <img src="a_button.png" id="a" class="buttonpresser">
+                           <img src="b_button.png" id="b" class="buttonpresser">
+                           <img src="c_button.png" id="c" class="buttonpresser">
+                           <img src="d_button.png" id="d" class="buttonpresser">
+                        </div>
+                        <div id="secondrow">
+                           <img src="1_button.png" id="1" class="buttonpresser">
+                           <img src="2_button.png" id="2" class="buttonpresser">
+                           <img src="3_button.png" id="3" class="buttonpresser">
+                           <img src="4_button.png" id="4" class="buttonpresser">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            <div id="column">
+               <div id="artist_display">
+                  <img id="c1" src="images/dp-human_after_all.png" class="song_image" data-name="In My Light">
+                  <figcaption>Daft Punk - Make Love</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="c2" src="images/dp-alive.png" class="song_image">
+                  <figcaption>Daft Punk - Robot Rock/Oh Yeah</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="c3" src="images/dp-discovery.png" class="song_image">
+                  <figcaption>Daft Punk - Something About Us</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="c4" src="images/dp-ram.png" class="song_image">
+                  <figcaption>Daft Punk - Instant Crush</figcaption>
+               </div>
+            </div>
+            <div id="column">
+               <div id="artist_display">
+                  <img id="d1" src="images/db-blackstar.png" class="song_image">
+                  <figcaption>David Bowie - Blackstar</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="d2" src="images/db-hunky_dory.png" class="song_image">
+                  <figcaption>David Bowie - Changes</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="d3" src="images/db-best_of_bowie.png" class="song_image">
+                  <figcaption>David Bowie - Ashes to Ashes</figcaption>
+               </div>
+               <div id="artist_display">
+                  <img id="d4" src="images/db-best_of_bowie.png" class="song_image">
+                  <figcaption>David Bowie - Under Pressure</figcaption>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- JavaScript and JQuery links -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="experiment_jukebox.js"></script>
+   </body>
+</html>

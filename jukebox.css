@@ -1,10 +1,15 @@
 html {
-   background-color: grey;
+  background: url("old school juke.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 figcaption {
    font-family: sans-serif;
    font-size: .6em;
    height: 2em;
+   background-color: #fffdd0;
 }
 #artist_display {
    width: 7em;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+   </head>
+   <body>
+
+
+      <button onclick="playAud()" type="button">Play Audio</button>
+      <button id="pause" onclick="pauseAud()" type="button">Pause Audio</button><br>
+      <button id="pause2" type="button">Pause2 Audio</button><br>
+
+      <audio id="music" controls="controls">
+         <source src="/Users/zacharyuzupis/Documents/jukebox/songs/daft_punk-instant_crush.mp3" type="audio/mp3" />
+      </audio>
+
+
+       <script>
+         $( document ).ready(function() {
+            var aud = $("#music");
+            $('#pause2').click(function(){
+               // $("#music").attr('src', 'hello.mp3');
+
+               console.log($("#music"));
+               aud[0].pause();
+            })
+
+
+         });
+            function playAud() {
+                document.getElementById('music').play();
+            }
+
+            function pauseAud() {
+                document.getElementById('music').pause();
+            }
+      </script>
+
+
+   </body>
+</html>

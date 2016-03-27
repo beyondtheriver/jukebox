@@ -19,9 +19,13 @@ $(document).ready(function(){
          console.log(this.audio_outlet);
          $('#player')[0].play(this.current_song);
       }
-      // this.pause = function(){
-
-      // }
+      this.pause = function(){
+         $('#player')[0].pause();
+      }
+      this.isPaused = function(){
+         console.log("JUKEBOX PAUSE STATUS IS: " +$('#player')[0].paused)
+         return $('#player')[0].paused;
+      }
 
    }
    //this is a Song object with two parameters - name and url
@@ -64,7 +68,28 @@ $(document).ready(function(){
    });
 
    $(".playbutton").click(function(){
+      var buttonsound = $('#sound1');
+      buttonsound[0].play();
       console.log(current_song);
-      juke.playsong(current_song);
+      if (juke.isPaused()) {
+         console.log("PAUSED");
+         juke.playsong(current_song);
+      } else {
+         console.log("WAS PLAYING");
+         juke.pause();
+      }
    });
+
+   //this jQuery function makes a sound whenever a button is pressed
+   //also it plays a button sound
+   $(".buttonpresser").click(function(){
+      var buttonsound = $('#sound1');
+      var buttonpressed = $(this).attr("id");
+      console.log(buttonpressed);
+      buttonsound[0].play();
+      // buttonpressed.animate({width: "4em"}); not working - instead try css :active
+      // use special css class for "pressed button" then use jQuery for
+      // onmousedown add class onmouseup remove class
+      $('#codedisplay').html(buttonpressed);
+   })
 })
